@@ -13,7 +13,14 @@ main {
     padding-bottom: 30px;
 }
 
+#taskListBgr { 
+    min-height: 300px; 
+    max-height: 100%; 
+    background-color:lightgrey; }
+
 div {padding-left: 40px;}
+
+div#divCounter { height: 90px; padding-left: 40px; }
 
 li {list-style-type:circle;}
 
@@ -21,9 +28,9 @@ li {list-style-type:circle;}
 
 .completed {
 text-decoration: line-through;
-color:rgb(140, 140, 140);
+color:rgb(120, 120, 120);
 }
 
-.infoTxtColor { color:brown;}
+.infoTextColor { color:brown;}
 
 .inputPadd { margin-top: 6px;}

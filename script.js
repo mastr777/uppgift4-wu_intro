@@ -9,6 +9,7 @@ let grabText; */
 const completedTasks = document.querySelector("#completedTasks");
 const textInput = document.querySelector("#textInput");
 const grabTextBtn = document.querySelector("#grabTextBtn");
+const infoText = document.querySelector("small")
 //const taskList = document.querySelector("#taskList");
 const todoList = document.querySelector("#todoList");
 
@@ -24,7 +25,15 @@ grabTextBtn.addEventListener("click", addToList);
 
 function addToList() {
 
+infoText.textContent = "";
+
 todoText = textInput.value;
+if (todoText.length == 0) {
+
+    infoText.textContent = "Please, type a task and press add !!";
+    return;
+
+}
 
 const listElement = document.createElement('li');
 todoList.appendChild(listElement);
@@ -33,8 +42,9 @@ const wrappedTask = document.createElement('span');
 wrappedTask.innerText = todoText;
 
 listElement.appendChild(wrappedTask);
-/* taskList = todoText;
 
-todoList.textContent = taskList; */
+// clear input field
+
+textInput.value = "";
 
 }

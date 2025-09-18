@@ -1,1 +1,18 @@
-li {list-style-type:none;}
+/* 
+style sheet for ToDo list
+ */
+
+body { font-family: monospace, 'Courier New', Courier;}
+
+main { width: 100%; }
+
+div {padding-left: 40px;}
+
+li {list-style-type:circle;}
+
+.completed {
+
+text-decoration: line-through;
+color:rgb(140, 140, 140);
+
+}

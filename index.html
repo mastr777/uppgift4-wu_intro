@@ -12,33 +12,34 @@
 
 <body>
 
+<main>
+
+<div>
 <h1>ToDo</h1>
-
-<!-- <ul>
-<li><input type="checkbox">&nbsp;&nbsp;Test</li>
-<li><input type="checkbox">&nbsp;&nbsp;Test2</li>
-<li><input type="checkbox">&nbsp;&nbsp;Test3</li>
-</ul> -->
+<p id="completedTasks">0 tasks done</p>
+</div>
 
 <div>
-<label for="textinput">Add task</label>
+<label for="textinput">Description of Task</label>
 <input type="text" id="textInput">
+<button type="button" id="grabTextBtn">Add Task</button>
+<p><small>type a task and press add !</small></p>
 </div>
+
+<!-- <div>
+<p id="taskList"></p>
+</div> -->
 
 <div>
-<label for="textinput2">Add another task</label>
-<input type="text2" id="textInput2">
+<ul id="todoList">
+
+</ul>
 </div>
 
-<div>
-    <button type="button" id="showList">Show List</button>
-</div>
 
-<div>
-<p id="result"></p>
-</div>
+</main>
 
-    <script src='script.js'></script>
+<script src='script.js'></script>
 </body>
 
 </html>

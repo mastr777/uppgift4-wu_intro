@@ -2,24 +2,39 @@
 ToDo List js
  */
 
-let textInput;
-let textInput2;
-let result;
+/* let textInput;
+let taskList = "<ol>";
+let grabText; */
 
-const input1 = document.querySelector("#textInput");
-const input2 = document.querySelector("#textInput2");
-const addBtn = document.querySelector("#showList");
-const showBtn = document.querySelector("#result");
+const completedTasks = document.querySelector("#completedTasks");
+const textInput = document.querySelector("#textInput");
+const grabTextBtn = document.querySelector("#grabTextBtn");
+//const taskList = document.querySelector("#taskList");
+const todoList = document.querySelector("#todoList");
 
-function addEachText() {
+let todoText = "";
+let completed = 0;
 
-textInput = input1.value;
-textInput2 = input2.value;
-result = textInput + " " + textInput2;
+// event listner for button Click
 
-showBtn.textContent = result;
-// parseInt()
+grabTextBtn.addEventListener("click", addToList);
+
+
+// add text from Input to a list
+
+function addToList() {
+
+todoText = textInput.value;
+
+const listElement = document.createElement('li');
+todoList.appendChild(listElement);
+
+const wrappedTask = document.createElement('span');
+wrappedTask.innerText = todoText;
+
+listElement.appendChild(wrappedTask);
+/* taskList = todoText;
+
+todoList.textContent = taskList; */
 
 }
-
-addBtn.addEventListener("click", addEachText);

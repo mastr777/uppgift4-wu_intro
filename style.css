@@ -4,15 +4,26 @@ style sheet for ToDo list
 
 body { font-family: monospace, 'Courier New', Courier;}
 
-main { width: 100%; }
+main { 
+    width: 100%; 
+    min-height: 400px; 
+    max-height: 100%; 
+    background-color: #dceefe; 
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 
 div {padding-left: 40px;}
 
 li {list-style-type:circle;}
 
-.completed {
+.divFixedHeight { height: 40px; }
 
+.completed {
 text-decoration: line-through;
 color:rgb(140, 140, 140);
-
 }
+
+.infoTxtColor { color:brown;}
+
+.inputPadd { margin-top: 6px;}

@@ -38,6 +38,15 @@ todoList.appendChild(item);
 const itemText = document.createElement('span');
 itemText.innerText = todoText;
 
+// delete task
+/* const deleteTask = document.createElement('img');
+deleteTask.src ="test.jpg";
+deleteTask.alt ="   DEL";
+deleteTask.width = 5;
+deleteTask.height = 5;
+itemText.appendChild(deleteTask); */
+
+
 // added EventListener to span (text)
 itemText.addEventListener("click", 
     function(){

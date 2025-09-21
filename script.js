@@ -10,7 +10,6 @@ const grabTextBtn = document.querySelector("#grabTextBtn");
 const infoText = document.querySelector("small")
 const todoList = document.querySelector("#todoList");
 
-
 let todoText = "";
 let completed = 0;
 

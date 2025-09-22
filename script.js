@@ -17,7 +17,7 @@ let completed = 0;
 grabTextBtn.addEventListener("click", addToList);
 
 
-// function start, when clicked button ---------------------------------------------------------------
+// function start, when clicked button --------------------------------------------------------------
 // add text from Input to a list
 function addToList() {
 
@@ -38,6 +38,7 @@ todoList.appendChild(item);
 const itemText = document.createElement('span');
 itemText.innerText = todoText;
 
+// --------------------------------------------------------------------------------------------------
 // delete task
 /* const deleteTask = document.createElement('img');
 deleteTask.src ="test.jpg";
@@ -45,7 +46,7 @@ deleteTask.alt ="   DEL";
 deleteTask.width = 5;
 deleteTask.height = 5;
 itemText.appendChild(deleteTask); */
-
+// --------------------------------------------------------------------------------------------------
 
 // added EventListener to span (text)
 itemText.addEventListener("click", 

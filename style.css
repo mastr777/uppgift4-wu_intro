@@ -2,10 +2,10 @@
 style sheet for ToDo list
  */
 
-body { font-family: monospace, 'Courier New', Courier;}
+body { font-family: monospace, 'Courier New', Courier; font-size:larger;}
 
 main { 
-    width: 100%; 
+    width: 50%; 
     min-height: 400px; 
     max-height: 100%; 
     background-color: #dceefe; 
@@ -13,24 +13,36 @@ main {
     padding-bottom: 30px;
 }
 
-#taskListBgr { 
-    min-height: 300px; 
-    max-height: 100%; 
-    background-color:lightgrey; }
+
+/* div styling */
+.divFixedHeight { height: 30px; }
 
 div {padding-left: 40px;}
 
-div#divCounter { height: 90px; padding-left: 40px; }
+div#divCounter { height: 50px; padding-left: 40px; }
 
-li {list-style-type:circle;}
 
-.divFixedHeight { height: 40px; }
+/* list default to marked 'Done' */
+li {list-style-type:circle; color:rgb(14, 63, 65); padding-bottom: 2px;}
+
+.listText {color:rgb(17, 138, 17);}
 
 .completed {
 text-decoration: line-through;
-color:rgb(120, 120, 120);
+color:rgb(114, 37, 37);
 }
 
+#taskListBgr { 
+    min-height: 300px; 
+    max-height: 100%; 
+    background-color:rgb(196, 227, 248);}
+
+
+/* various styling */
 .infoTextColor { color:brown;}
 
 .inputPadd { margin-top: 6px;}
+
+.trashcan { padding-left: 10px;}
+
+ul {padding-top: 10px;}

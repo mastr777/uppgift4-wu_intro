@@ -68,7 +68,7 @@ function addToList() {
             else {
 
             item.remove();
-
+            
             }
     }
     );
@@ -94,7 +94,7 @@ function addToList() {
     item.appendChild(itemText);
     item.appendChild(trashcan);
 
-    
+
     // clear input field
     textInput.value = '';
 

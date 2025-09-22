@@ -2,6 +2,7 @@
 ToDo List js
  */
 
+
 // declaration of needed variables
 
 const completedTasks = document.querySelector('#completedTasks');
@@ -14,14 +15,16 @@ const todoList = document.querySelector('#todoList');
 let todoText = '';
 let completed = 0;
 
+
 // event listner for button Click
 grabTextBtn.addEventListener('click', addToList);
 
+
+// an Array conected to the li input
 const todoArray = [];
 
 
 // function start, when clicked button --------------------------------------------------------------
-
 // add text from Input to a list
 function addToList() {
 
@@ -35,15 +38,19 @@ function addToList() {
         return;
     }
 
+
         // adding input into an Array
         let text = textInput.value;
         todoArray.push(text);
 
+
+    // creating li and span within elements
     const item = document.createElement('li');
     todoList.appendChild(item);
     const itemText = document.createElement('span');
     itemText.setAttribute('class', 'listText');
     itemText.innerText = todoText;
+
 
     // trashcan code for an appearing span element
     const trashcan = document.createElement('span');
@@ -51,7 +58,7 @@ function addToList() {
     trashcan.setAttribute('class', 'trashcan');
 
     trashcan.addEventListener('click', function() {
-        
+
         if (itemText.classList.contains('completed')) {
                 itemText.setAttribute('class', 'listText');
                 completed--;
@@ -87,6 +94,7 @@ function addToList() {
     item.appendChild(itemText);
     item.appendChild(trashcan);
 
+    
     // clear input field
     textInput.value = '';
 

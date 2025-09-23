@@ -23,6 +23,14 @@ theButton.addEventListener('click', addToList);
 // an Array conected to the li input
 const todoArray = [];
 
+function changeStatus(todoText, completedStatus){
+
+    let findIndex = todoArray.map(t => t.name).indexOf(todoText);
+    todoArray[findIndex].completed = completedStatus;
+
+
+}
+
 
 // function start, when clicked button --------------------------------------------------------------
 // add text from Input to a list
@@ -40,8 +48,9 @@ function addToList() {
 
 
         // adding input into an Array
-        let text = textInput.value;
-        todoArray.push(text);
+            /* let text = textInput.value; */
+        const todoObject = {name: todoText, completed: false};
+        todoArray.push(todoObject); /* text */
 
 
     // creating li and span within elements
@@ -53,10 +62,10 @@ function addToList() {
     itemText.innerText = todoText;
 
 
-    // trashcan code for an appearing span element
+        // trashcan code for an appearing span element
     const trashcan = document.createElement('span');
     trashcan.innerHTML = '&#x1F5D1';
-    trashcan.setAttribute('class', 'trashcan');
+    trashcan.classList.add('trashcan'); /* setAttribute('class',  */
 
     trashcan.addEventListener('click', function() {
 
@@ -66,11 +75,18 @@ function addToList() {
                 completed--;
                 completedTasks.textContent = 'You have ' + completed + ' tasks done';
                 item.remove();
+                let removeText = item.firstChild.textContent;
+                let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
+                todoArray.splice(indexToRemove, 1);
+                
             }
             else {
 
             item.remove();
-            
+            let removeText = item.firstChild.textContent;
+            let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
+            todoArray.splice(indexToRemove, 1);
+
             }
     });
 
@@ -80,14 +96,20 @@ function addToList() {
         function () {
 
             if (itemText.classList.contains('completed')) {
+
                 itemText.setAttribute('class', 'listText');
                 completed--;
                 completedTasks.textContent = 'You have ' + completed + ' tasks done';
+                changeStatus(itemText.innerText, false);
+
             }
             else {
+
                 itemText.setAttribute('class', 'completed');
                 completed++;
                 completedTasks.textContent = 'You have ' + completed + ' tasks done';
+                changeStatus(itemText.innerText, true);
+
             }
         }
     );
@@ -96,7 +118,7 @@ function addToList() {
     item.appendChild(trashcan);
 
 
-    // clear input field
+    // clear input field - last in code
     textInput.value = '';
 
 };

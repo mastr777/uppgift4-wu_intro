@@ -8,7 +8,7 @@ ToDo List js
 const completedTasks = document.querySelector('#completedTasks');
 
 const textInput = document.querySelector('#textInput');
-const grabTextBtn = document.querySelector('#grabTextBtn');
+const theButton = document.querySelector('#theButton');
 const infoText = document.querySelector('small')
 const todoList = document.querySelector('#todoList');
 
@@ -17,7 +17,7 @@ let completed = 0;
 
 
 // event listner for button Click
-grabTextBtn.addEventListener('click', addToList);
+theButton.addEventListener('click', addToList);
 
 
 // an Array conected to the li input
@@ -34,7 +34,7 @@ function addToList() {
 
     if (todoText.length == 0) {
 
-        infoText.textContent = 'Please, type a task and press Add Task !!';
+        infoText.textContent = ' _ please, type a task !';
         return;
     }
 
@@ -47,6 +47,7 @@ function addToList() {
     // creating li and span within elements
     const item = document.createElement('li');
     todoList.appendChild(item);
+
     const itemText = document.createElement('span');
     itemText.setAttribute('class', 'listText');
     itemText.innerText = todoText;
@@ -60,6 +61,7 @@ function addToList() {
     trashcan.addEventListener('click', function() {
 
         if (itemText.classList.contains('completed')) {
+
                 itemText.setAttribute('class', 'listText');
                 completed--;
                 completedTasks.textContent = 'You have ' + completed + ' tasks done';
@@ -70,8 +72,7 @@ function addToList() {
             item.remove();
             
             }
-    }
-    );
+    });
 
 
     // added EventListener to span (text)
@@ -89,7 +90,7 @@ function addToList() {
                 completedTasks.textContent = 'You have ' + completed + ' tasks done';
             }
         }
-    )
+    );
 
     item.appendChild(itemText);
     item.appendChild(trashcan);
@@ -98,4 +99,4 @@ function addToList() {
     // clear input field
     textInput.value = '';
 
-}
+};

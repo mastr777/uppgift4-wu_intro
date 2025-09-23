@@ -2,10 +2,10 @@
 style sheet for ToDo list
  */
 
-body { font-family: monospace, 'Courier New', Courier; font-size:larger;}
+body { font-family: monospace, 'Courier New', Courier; font-size:larger; }
 
 main { 
-    width: 50%; 
+    width: 70%; 
     min-height: 400px; 
     max-height: 100%; 
     background-color: #dceefe; 
@@ -13,36 +13,37 @@ main {
     padding-bottom: 30px;
 }
 
+#completedTasks {font-size: large;}
 
 /* div styling */
-.divFixedHeight { height: 30px; }
+.divFixedHeight { height: 80px; }
 
-div {padding-left: 40px;}
+div {padding-left: 50px;}
 
-div#divCounter { height: 50px; padding-left: 40px; }
+div#divCounter {color:rgb(154, 154, 154); height: 40px; padding-left: 40px; background-color:rgb(233, 242, 250);}
 
 
 /* list default to marked 'Done' */
-li {list-style-type:circle; color:rgb(14, 63, 65); padding-bottom: 2px;}
+li {list-style-type:circle; padding-bottom: 2px;}
 
-.listText {color:rgb(17, 138, 17);}
+.listText {color:black;}/* rgb(18, 178, 18) */
 
 .completed {
 text-decoration: line-through;
-color:rgb(114, 37, 37);
+color:rgb(154, 154, 154);/* rgb(195, 106, 106) */
 }
 
-#taskListBgr { 
+#taskListFrame { 
     min-height: 300px; 
     max-height: 100%; 
-    background-color:rgb(196, 227, 248);}
+    background-color:rgb(233, 242, 250);}
 
 
 /* various styling */
-.infoTextColor { color:brown;}
+.infoTextColor { color:rgb(30, 128, 209);}
 
 .inputPadd { margin-top: 6px;}
 
 .trashcan { padding-left: 10px;}
 
-ul {padding-top: 10px;}
+ul {padding-top: 10px; padding:0; margin:0;}

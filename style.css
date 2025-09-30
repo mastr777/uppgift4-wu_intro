@@ -1,51 +1,99 @@
+
 /* 
+-------------------------------------
 style sheet for ToDo list
+-------------------------------------
  */
 
-body { font-family: monospace, 'Courier New', Courier; font-size:larger; }
 
-main { 
-    width: 70%; 
-    min-height: 400px; 
-    max-height: 100%; 
-    background-color: #dceefe; 
+body {
+    font-family: monospace, 'Courier New', Courier;
+    color:aqua; /* rgb(0, 242, 255) */
+    font-size: large;
+    line-height: 27px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+main {
+    width: 50%;
+    min-height: 400px;
+    max-height: 100%;
+    background-color: #334a5b;
     padding-top: 20px;
     padding-bottom: 30px;
+    margin-left: 25%;
 }
 
-#completedTasks {font-size: large;}
-
-/* div styling */
-.divFixedHeight { height: 80px; }
-
-div {padding-left: 50px;}
-
-div#divCounter {color:rgb(154, 154, 154); height: 40px; padding-left: 40px; background-color:rgb(233, 242, 250);}
+#completedTasks {
+    font-size: small;
+}
 
 
-/* list default to marked 'Done' */
-li {list-style-type:circle; padding-bottom: 2px;}
+/* div styling ---------------------------------------------------- */
+.divFixedHeight {
+    height: 80px;
+}
 
-.listText {color:black;}/* rgb(18, 178, 18) */
+div {
+    padding-left: 40px;
+}
+
+div#divCounter {
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding-left: 40px;
+    background-color: rgb(72, 107, 126);
+    padding-left: 80px;
+}
+
+
+/* list default to marked 'Done' ----------------------------------- */
+li {
+    list-style-type: circle;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-bottom: dotted rgb(112, 149, 164) 2px;
+}
+
+.listText {
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
 
 .completed {
-text-decoration: line-through;
-color:rgb(154, 154, 154);/* rgb(195, 106, 106) */
+    text-decoration: line-through;
+    color: rgb(100, 34, 66);
 }
 
-#taskListFrame { 
-    min-height: 300px; 
-    max-height: 100%; 
-    background-color:rgb(233, 242, 250);
+#taskListFrame {
+    min-height: 300px;
+    max-height: 100%;
+    background-color: rgb(72, 107, 126);
+    padding-left: 80px;
     padding-top: 10px;
 }
 
+#theButton { background-color: rgb(85, 234, 165);}
 
-/* various styling */
-.infoTextColor { color:rgb(30, 128, 209);}
 
-.inputPadd { margin-top: 6px;}
+/* various styling ------------------------------------------------- */
+.infoTextColor {
+    color: rgb(144, 201, 247);
+}
 
-.trashcan { padding-left: 10px;}
+.inputPadd {
+    margin-top: 6px;
+}
 
-ul {padding:0; margin:0;}
+.trashcan {
+    padding-left: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}

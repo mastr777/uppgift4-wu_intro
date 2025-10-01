@@ -7,11 +7,11 @@ style sheet for ToDo list
 
 body {
     font-family: monospace, 'Courier New', Courier;
-    color: aqua;
+    color:rgb(226, 194, 154);
     /* rgb(0, 242, 255) */
     font-size: large;
     line-height: 30px;
-    background-color: white;
+    background-color: snow;
 }
 
 h1 {
@@ -25,8 +25,8 @@ h1 {
     top: 22px;
     min-width: 50px;
     font-size:xx-small;
-    background-color: rgb(78, 78, 78);
-    color: white;
+    background-color: rgb(26, 26, 26);
+    color: snow;
     letter-spacing: 1px;
 }
 
@@ -36,7 +36,7 @@ h1 {
     top: 50px;
     min-width: 50px;
     font-size:xx-small;
-    background-color: white;
+    background-color:snow;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
 }

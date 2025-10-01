@@ -7,7 +7,7 @@ style sheet for ToDo list
 
 body {
     font-family: monospace, 'Courier New', Courier;
-    color:rgb(226, 194, 154);
+    color:rgb(241, 213, 179);
     /* rgb(0, 242, 255) */
     font-size: large;
     line-height: 30px;
@@ -45,7 +45,7 @@ main {
     width: 50%;
     min-height: 400px;
     max-height: 100%;
-    background-color: #334a5b;
+    background-color: #345068;
     padding-top: 6px;
     padding-bottom: 30px;
     margin-left: 25%;

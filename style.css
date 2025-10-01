@@ -11,10 +11,34 @@ body {
     /* rgb(0, 242, 255) */
     font-size: large;
     line-height: 30px;
+    background-color: white;
 }
 
 h1 {
     font-size: x-large;
+}
+
+
+#layoutSwitch {
+    position: absolute;
+    right: 27%;
+    top: 22px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    letter-spacing: 1px;
+}
+
+#layoutSwitch2 {
+    position: absolute;
+    right: 27%;
+    top: 50px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
 }
 
 main {
@@ -22,7 +46,7 @@ main {
     min-height: 400px;
     max-height: 100%;
     background-color: #334a5b;
-    padding-top: 20px;
+    padding-top: 6px;
     padding-bottom: 30px;
     margin-left: 25%;
     border-radius: 7px;

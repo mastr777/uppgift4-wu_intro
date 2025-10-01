@@ -25,6 +25,7 @@ main {
     padding-top: 20px;
     padding-bottom: 30px;
     margin-left: 25%;
+    border-radius: 7px;
 }
 
 #completedTasks {

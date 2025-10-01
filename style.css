@@ -43,7 +43,7 @@ h1 {
 
 main {
     width: 50%;
-    min-height: 400px;
+    min-height: 540px;
     max-height: 100%;
     background-color: #345068;
     padding-top: 6px;
@@ -77,7 +77,7 @@ div#divCounter {
 
 /* list default to marked 'Done' ----------------------------------- */
 li {
-    list-style-type: circle;
+    list-style-type: none;
     padding-bottom: 2px;
     padding-left: 10px;
     border-bottom: dotted rgb(74, 95, 104) 2px;
@@ -88,7 +88,9 @@ span.listText {
     display:inline-block;
     width: 70%;
     color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
+    font-style: italic;
 }
 
 .completed {
@@ -96,6 +98,9 @@ span.listText {
     width: 70%;
     text-decoration: line-through;
     color: rgb(206, 117, 136);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
 }
 
 #taskListFrame {

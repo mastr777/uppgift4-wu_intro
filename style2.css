@@ -1,0 +1,139 @@
+/* 
+-------------------------------------
+style sheet for ToDo list
+-------------------------------------
+ */
+
+
+body {
+    font-family: monospace, 'Courier New', Courier;
+    color: aqua;
+    /* rgb(0, 242, 255) */
+    font-size: large;
+    line-height: 30px;
+    background-color: rgb(73, 73, 73);
+}
+
+h1 {
+    font-size: x-large;
+}
+
+#layoutSwitch {
+    position: absolute;
+    right: 27%;
+    top: 22px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+#layoutSwitch2 {
+    position: absolute;
+    right: 27%;
+    top: 50px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+main {
+    width: 50%;
+    min-height: 400px;
+    max-height: 100%;
+    background-color: #334a5b;
+    padding-top: 6px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+    border-radius: 7px;
+}
+
+#completedTasks {
+    font-size: small;
+}
+
+
+/* div styling ---------------------------------------------------- */
+.divFixedHeight {
+    height: 80px;
+}
+
+div {
+    padding-left: 60px;
+}
+
+div#divCounter {
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding-left: 40px;
+    background-color: rgb(29, 40, 49);
+    padding-left: 72px;
+}
+
+
+/* list default to marked 'Done' ----------------------------------- */
+li {
+    list-style-type: circle;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-bottom: dotted rgb(74, 95, 104) 2px;
+    margin-bottom: 7px;
+}
+
+.listText {
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(206, 117, 136);
+}
+
+#taskListFrame {
+    min-height: 300px;
+    max-height: 100%;
+    background-color: rgb(29, 40, 49);
+    padding-left: 64px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#theButton {
+    background-color: rgb(79, 231, 160);
+    border-radius: 4px;
+    border-color: skyblue;
+}
+
+#theButton:hover { 
+    background-color: rgb(32, 248, 147);
+}
+
+
+/* various styling ------------------------------------------------- */
+.infoTextColor {
+    color: rgb(162, 213, 255);
+}
+
+.inputPadd {
+    margin-top: 6px;
+}
+
+.trashcan {
+    padding-left: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+#textInput {
+    border-color: skyblue;
+    border-radius: 4px;
+}

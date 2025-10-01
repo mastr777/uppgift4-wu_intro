@@ -42,7 +42,7 @@ function addToList() {
 
     if (todoText.length == 0) {
 
-        infoText.textContent = ' _ please, type a task !';
+        infoText.textContent = ' _please, type a task !';
         return;
     }
 
